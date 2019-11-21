@@ -22,5 +22,9 @@ void main() {
     expect(stackCalc("0 5 5 7 * - /"), equals('error'));
   });
 
+  test('Test Case 6', (){
+    expect(stackCalc('5 6 POP -'), equals('Invalid instruction: Missing Number'));
+  });
+
 
 }

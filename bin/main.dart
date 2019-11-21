@@ -50,6 +50,12 @@ stackCalc(String series){
         tempStack.addFirst(number);
         stack.removeFirst();
       }
+
+      else if(stack.first == 'POP'){
+        stack.removeFirst();
+        tempStack.removeFirst();
+      }
+
       else if(stack.first == '+'){
         if(tempStack.length >= 2){
           stackOperation(stack, tempStack,'+');
